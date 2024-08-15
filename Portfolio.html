@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venkatesh Movva</title>
     <style>
-       /* Header Styles */
 header {
-    background: linear-gradient(135deg, darkblue,blue, #4CAF50); /* Vibrant gradient blending orange and green */
+    background: linear-gradient(135deg, darkblue,blue, #4CAF50); 
     color: white;
     padding: 2rem 1rem;
     text-align: center;
@@ -17,13 +16,12 @@ header {
     transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Header Text Styles */
 header h1 {
     margin: 0;
-    font-size: 3.5rem; /* Larger font size */
+    font-size: 3.5rem; 
     font-weight: 700;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* More pronounced text shadow */
-    letter-spacing: 2px; /* Increased letter spacing */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); 
+    letter-spacing: 2px; 
 }
 
 header p {
@@ -32,21 +30,19 @@ header p {
     font-style: italic;
 }
 
-/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 1rem 0 0;
     display: flex;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.9); /* Slightly opaque white for contrast */
-    border-radius: 30px; /* More rounded corners */
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 30px; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
 }
 
-/* Navigation Background Overlay */
 nav ul::before {
     content: "";
     position: absolute;
@@ -59,20 +55,19 @@ nav ul::before {
     pointer-events: none;
 }
 
-/* Navigation Links */
 nav ul li {
     margin: 0;
 }
 
 nav ul li a {
-    color: #fff; /* White text for high contrast */
+    color: #fff; 
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
     padding: 1rem 2rem;
     display: inline-block;
     transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-    border-radius: 30px; /* Rounded corners for nav items */
+    border-radius: 30px; 
     position: relative;
     overflow: hidden;
 }
@@ -84,7 +79,7 @@ nav ul li a::before {
     left: 0;
     width: 0;
     height: 4px;
-    background: #ff9800; /* Orange underline effect */
+    background: #ff9800; 
     transition: width 0.3s;
 }
 
@@ -93,46 +88,44 @@ nav ul li a:hover::before {
 }
 
 nav ul li a:hover {
-    background: #ffffff; /* White background on hover */
-    color: #ff5722; /* Darker Orange text */
-    transform: translateY(-4px); /* Slight lift effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    background: #ffffff;
+    color: #ff5722; 
+    transform: translateY(-4px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
-/* Section Styles */
 section {
     padding: 2rem;
     margin: 2rem auto;
     max-width: 800px;
-    background: #ffffff; /* White */
+    background: #ffffff; 
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    display: none; /* Hide all sections by default */
+    display: none; 
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .active {
-    display: block; /* Show the active section */
+    display: block;
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Headings Styles */
 h2 {
     font-size: 2.5rem;
-    color: #ff5722; /* Darker Orange */
-    border-bottom: 3px solid #4CAF50; /* Green */
+    color: #ff5722;
+    border-bottom: 3px solid #4CAF50; 
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
     transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.3s ease;
 }
 
 h2:hover {
-    color: #ff9800; /* Lighter Orange */
-    border-bottom: 3px solid #ff5722; /* Darker Orange */
+    color: #ff9800; 
+    border-bottom: 3px solid #ff5722; 
     transform: translateY(-2px);
 }
 
@@ -148,7 +141,7 @@ h3::after {
     display: block;
     width: 50px;
     height: 2px;
-    background: #4CAF50; /* Green */
+    background: #4CAF50; 
     margin-top: 5px;
     transition: width 0.3s ease;
 }
@@ -157,7 +150,6 @@ h3:hover::after {
     width: 70px;
 }
 
-/* List Styles */
 ul {
     padding-left: 1.5rem;
     list-style-type: none;
@@ -171,57 +163,55 @@ ul li {
 
 ul li::before {
     content: "✓";
-    color: #ff5722; /* Darker Orange */
+    color: #ff5722; 
     position: absolute;
     left: 0;
     font-size: 1.2rem;
     line-height: 1.2;
 }
 
-/* Project Styles */
 .project {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: #ffffff; /* White */
-    border: 2px solid #4CAF50; /* Green */
+    background: #ffffff; 
+    border: 2px solid #4CAF50; 
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-    background: #fff3e0; /* Lightest Orange */
-    border-color: #ff9800; /* Lighter Orange */
+    background: #fff3e0; 
+    border-color: #ff9800;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
 }
 
 .project h3 {
     margin-top: 0;
-    color: #ff5722; /* Darker Orange */
+    color: #ff5722; 
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .project h3:hover {
-    color: #ff9800; /* Lighter Orange */
+    color: #ff9800; 
 }
 
 .project a {
-    color: #4CAF50; /* Green */
+    color: #4CAF50; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .project a:hover {
-    color: #ff5722; /* Darker Orange */
+    color: #ff5722; 
     text-decoration: underline;
 }
 
-/* Form Styles */
 form {
-    background: #ffffff; /* White */
+    background: #ffffff;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -238,9 +228,8 @@ label {
     font-weight: bold;
     color: #333;
 }
-
 input, textarea {
-    width: 100%;
+    width: 80%;
     padding: 0.75rem;
     margin-bottom: 1rem;
     border: 1px solid #ddd;
@@ -249,14 +238,13 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #ff9800; /* Orange */
+    border-color: #ff9800;
     outline: none;
     box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.2);
 }
 
-/* Button Styles */
 button {
-    background: linear-gradient(135deg, #4CAF50, #388e3c); /* Gradient from Green to Darker Green */
+    background: linear-gradient(135deg, #4CAF50, #388e3c); 
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -267,14 +255,13 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(135deg, #388e3c, #2c6c2f); /* Darker Green gradient */
+    background: linear-gradient(135deg, #388e3c, #2c6c2f); 
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer Styles */
 footer {
-    background: linear-gradient(135deg, darkgreen,blue,green); /* Gradient from orange to lighter orange */
+    background: linear-gradient(135deg, darkgreen,blue,green); 
     color: white;
     text-align: center;
     padding: 1rem;
@@ -283,7 +270,6 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -382,18 +368,15 @@ footer {
     <script>
         document.querySelectorAll('.nav-buttons button').forEach(button => {
             button.addEventListener('click', function() {
-                // Hide all sections
                 document.querySelectorAll('section').forEach(section => {
                     section.classList.remove('active');
                 });
                 
-                // Show the targeted section
                 const targetId = this.getAttribute('data-target');
                 document.getElementById(targetId).classList.add('active');
             });
         });
 
-        // Show the default section on page load
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.nav-buttons button').click();
         });
